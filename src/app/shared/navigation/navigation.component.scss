@@ -1,3 +1,7 @@
 button {
   @apply capitalize mr-2 px-4 py-2 rounded-md bg-white mt-4 hover:bg-chill-500 hover:text-white;
+
+  &.highlight {
+    @apply bg-coolBlue text-white hover:bg-chill-500;
+  }
 }

@@ -12,42 +12,42 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    component: HomeComponent
+    component: HomeComponent,
   },
   {
     path: 'services',
     pathMatch: 'full',
-    component: ServicesComponent
+    component: ServicesComponent,
   },
   {
     path: 'about',
     pathMatch: 'full',
-    component: AboutComponent
+    component: AboutComponent,
   },
   {
     path: 'schedule',
     pathMatch: 'full',
-    component: ScheduleComponent
+    component: ScheduleComponent,
   },
   {
     path: 'contact',
     pathMatch: 'full',
-    component: ContactComponent
+    component: ContactComponent,
   },
   {
     path: 'admin',
     pathMatch: 'full',
-    component: AdminComponent
+    component: AdminComponent,
   },
   {
     path: 'login',
     pathMatch: 'full',
-    component: LoginComponent
-  }
+    component: LoginComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -85,5 +85,5 @@ module.exports = {
     A200: '#ffad8e',
     A400: '#ff895b',
     A700: '#ff7641',
-  }
+  },
 };

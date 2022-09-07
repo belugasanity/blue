@@ -1037,4 +1037,4 @@ module.exports = {
       strategy: 'base', // only generate global styles
     }),
   ],
-}
+};

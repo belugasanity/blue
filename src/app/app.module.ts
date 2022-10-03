@@ -8,7 +8,12 @@ import { NavigationComponent } from './shared/navigation/navigation.component';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, NavigationComponent, FooterComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NavigationComponent,
+    FooterComponent,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

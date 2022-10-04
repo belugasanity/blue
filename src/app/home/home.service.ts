@@ -11,7 +11,7 @@ export class HomeService {
   getSectionTwo(): Observable<object> {
     const _data = {
       highlight: {
-        image: 'src',
+        image: 'https://images.pexels.com/photos/544965/pexels-photo-544965.jpeg?cs=srgb&dl=pexels-burst-544965.jpg&fm=jpg',
         heading: 'Heating and cooling services in Utah',
         body: 'Keeping cool in the summer and warm in the winter has never been easier. HVAC repair, replacement and maintenance services near you.'
       },

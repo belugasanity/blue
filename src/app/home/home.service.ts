@@ -38,6 +38,6 @@ export class HomeService {
         },
       ]
     }
-    return of(_data).pipe(delay(500));
+    return of(_data).pipe(delay(1000));
   }
 }

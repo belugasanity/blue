@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HomeService } from './home.service';
+import { Observable, tap } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +11,20 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
+  sectionTwo$!: Observable<any>;
+  constructor(private homeService: HomeService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getSectionTwo();
+  }
+
+  getSectionTwo() {
+    this.sectionTwo$ = this.homeService.getSectionTwo().pipe(
+      tap({
+        error: (err: unknown) => {
+          console.log(`Error retrieving section 2: ${err}`);
+        }
+      })
+    );
+  }
 }

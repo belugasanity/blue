@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
       tap({
         error: (err: unknown) => {
           console.log(`Error retrieving section 2: ${err}`);
-        }
+        },
       })
     );
   }

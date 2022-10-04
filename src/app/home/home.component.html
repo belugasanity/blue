@@ -69,10 +69,10 @@
           />
           <ng-template #tempImage>
             <img
-            alt="..."
-            src="assets/loading-mtns.jpeg"
-            class="w-full align-middle rounded-t-lg"
-          />
+              alt="..."
+              src="assets/loading-mtns.jpeg"
+              class="w-full align-middle rounded-t-lg"
+            />
           </ng-template>
           <blockquote class="relative p-8 mb-4">
             <svg
@@ -86,7 +86,9 @@
                 class="text-cool-600 fill-current"
               ></polygon>
             </svg>
-            <ng-container *ngIf="sectionTwo$ | async as vm; else highlightLoading">
+            <ng-container
+              *ngIf="sectionTwo$ | async as vm; else highlightLoading"
+            >
               <h4 class="text-xl font-bold text-white">
                 {{ vm.highlight.heading }}
               </h4>
@@ -94,9 +96,7 @@
                 {{ vm.highlight.body }}
               </p>
             </ng-container>
-            <ng-template #highlightLoading>
-              Loading...
-            </ng-template>
+            <ng-template #highlightLoading> Loading... </ng-template>
           </blockquote>
         </div>
       </div>
@@ -122,7 +122,7 @@
                 <div
                   class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
                 >
-                <i class="fa-solid fa-toolbox"></i>
+                  <i class="fa-solid fa-toolbox"></i>
                 </div>
                 <h6 class="text-xl mb-1 font-semibold">
                   JavaScript Components
@@ -140,7 +140,7 @@
                 <div
                   class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
                 >
-                <i class="fa-solid fa-screwdriver-wrench"></i>
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
                 </div>
                 <h6 class="text-xl mb-1 font-semibold">Pages</h6>
                 <p class="mb-4 text-blueGray-500">
@@ -154,7 +154,7 @@
                 <div
                   class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
                 >
-                <i class="fa-solid fa-fire"></i>
+                  <i class="fa-solid fa-fire"></i>
                 </div>
                 <h6 class="text-xl mb-1 font-semibold">Documentation</h6>
                 <p class="mb-4 text-blueGray-500">
